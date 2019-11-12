@@ -1,0 +1,9 @@
+
+Create 3D variation of platformer body
+
+Have some kind of acceleration variable.
+Maybe make it into a list of accelerations and velocities.
+
+Slopes.
+
+

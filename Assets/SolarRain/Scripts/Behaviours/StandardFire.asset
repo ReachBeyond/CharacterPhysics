@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36038346513e04421ac25397d8a38e9d, type: 3}
+  m_Name: StandardFire
+  m_EditorClassIdentifier: 
+  airShotRecoilVelocity: 8
+  projectilePrefab: {fileID: 1014650185439762, guid: 75bdf094aea4249039469100a4106471,
+    type: 2}

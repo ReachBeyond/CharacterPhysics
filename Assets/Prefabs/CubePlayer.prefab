@@ -1,0 +1,206 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1017489756383930}
+  m_IsPrefabAsset: 1
+--- !u!1 &1017489756383930
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4409334430776740}
+  - component: {fileID: 33803265629224638}
+  - component: {fileID: 23062147365418600}
+  - component: {fileID: 65093215647073316}
+  - component: {fileID: 54605300048639926}
+  - component: {fileID: 114757790261743532}
+  - component: {fileID: 114714460079857198}
+  - component: {fileID: 114932482252567868}
+  m_Layer: 2
+  m_Name: CubePlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4409334430776740
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1017489756383930}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &23062147365418600
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1017489756383930}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &33803265629224638
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1017489756383930}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &54605300048639926
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1017489756383930}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &65093215647073316
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1017489756383930}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114714460079857198
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1017489756383930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3653ad35b7e2149b3816e37ac00f5696, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gBody: {fileID: 114757790261743532}
+  footBoxDepth: 0.05
+  walkingSpeed: 2
+  _jumpHeight: 2
+  _jumpPeekDist: 1
+  normalGravityScale: 3
+  fallingDrag: 0.05
+  rotationTarget: {fileID: 0}
+  rightRotation: {x: 0, y: 0, z: 0}
+  leftRotation: {x: 0, y: 0, z: 0}
+  invertForward: 0
+  invertRight: 0
+  invertUp: 0
+  animator: {fileID: 0}
+  moveFloatName: Forward
+  groundBoolName: OnGround
+  verticalFloatName: Vertical
+  jumpTriggerName: Jumped
+  jumpAnimScale: 1
+  animateByIntendedSpeed: 1
+--- !u!114 &114757790261743532
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1017489756383930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50b95aaaa5d89413f89c20c68c952115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crushEvent:
+    gameEvent: {fileID: 0}
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  collisionMask:
+    _useInternal: 1
+    internalValue:
+      serializedVersion: 2
+      m_Bits: 1
+    variable: {fileID: 0}
+  boundingBox: {fileID: 65093215647073316}
+  skinThickness: 0.05
+  debugCasts:
+    _useInternal: 1
+    internalValue: 1
+    variable: {fileID: 0}
+  debugCastLifetime: 0.1
+  debugCastAttempt: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  debugCastMiss: {r: 1, g: 0, b: 0, a: 1}
+  debugCastHit: {r: 0, g: 1, b: 1, a: 1}
+--- !u!114 &114932482252567868
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1017489756383930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a9fad0c0a8d41638df8c0d33d4450c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  body: {fileID: 114714460079857198}
+  xAxisName:
+    _useInternal: 1
+    internalValue: Horizontal
+    variable: {fileID: 0}
+  yAxisName:
+    _useInternal: 1
+    internalValue: Vertical
+    variable: {fileID: 0}
+  jumpButtonName:
+    _useInternal: 1
+    internalValue: Jump
+    variable: {fileID: 0}
