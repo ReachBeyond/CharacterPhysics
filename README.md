@@ -1,7 +1,7 @@
 # GamePhysics
 An attempt at a more game-y physics system which is more flexible than Unity's default options.
 
-The GamePhysics package contains a more flexable physics system for both 2D and 3D environments. (As of this writing, 2D is almost certainly not functional, but I could get it working again with maybe a few days of development.)
+The GamePhysics package contains a more flexible physics system for both 2D and 3D environments. (As of this writing, 2D is almost certainly not functional, but I could get it working again with maybe a few days of development.)
 
 Any actor using the system it broken up into three parts:
 
@@ -12,7 +12,7 @@ Any actor using the system it broken up into three parts:
 Revisions to this project were initially tracked via Unity Collab, so there are relatively few git commits here.
 
 
-## Where'll this go from here?
+## Where will this go from here?
 
 This system is missing the ability to work with certain things in a nice way, such as elevators, slopes, etc. However, these may never get implemented at this point, at least not in this version of the physics system. I never actually got to use this in any game prototypes, but this project has given me insight into how physics systems are built.
 
@@ -25,13 +25,13 @@ If you want to use this but aren't sure what to do (or would like a certain feat
 
 ## Why this exists
 
-The GamePhysics package was initially developed for a mixed VR game based on a 2D platforming. I wasn't happy with the default CharacterController, since it was restricted to a capsule. But this left me with two options. The first was to use Unity's dynamic RigidBody physics, but I had a hard time getting this to co-oporate in a way which felt nice to play with. Alternatively, I could abandon Unity's physics systems entirely and build my own.
+The GamePhysics package was initially developed for a mixed VR game based on 2D platforming. I wasn't happy with the default CharacterController, since it was restricted to a capsule. But this left me with one other option: use Unity's dynamic RigidBody physics, but I had a hard time getting this to co-operate in a way which felt nice.
 
-In retrospect, I probably could have attached a cube to the CharacterController's GameObject, or I could have just directly manipulated the RigidBody's velocities, or maybe a number of other things. But I wanted to get an idea of how this stuff worked.
+Rather than settling for either of these options, I decided to build my own system. In retrospect, I probably could have attached a cube to the CharacterController's GameObject, or I could have just directly manipulated the RigidBody's velocities, or maybe a number of other things. But I thought this was a good learning opportunity.
 
 During the development of the VR game, I discovered a strange bug: If I instantiated the player upside-down, they'd *fall up*. Though I was initially going to patch this out, I realized that it would make an interesting mechanic, so I ended up basing the entire game around this quirk of the physics system.
 
-A few months went by since that VR project was completed, and I found myself repeatedly running into the same problem: I kept having game ideas which would work best as 3rd person platformers, but I didn't have access to a flexible enough physics system. So I began to wonder: Could I take my physics system and make it work in 3D?
+A few months went by since that VR project was completed, and I found myself repeatedly having game ideas which would work best as 3rd person platformers, but I didn't have access to a flexible enough physics system. So I began to wonder: Could I take my physics system and make it work in 3D?
 
 So I went to work, some time around the start of 2018. A few months later, and I finally had a decent physics system.
 
