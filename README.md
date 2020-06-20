@@ -14,7 +14,7 @@ Revisions to this project were initially tracked via Unity Collab, so there are 
 
 ## Where will this go from here?
 
-This system is missing the ability to work with certain things in a nice way, such as elevators, slopes, etc. However, these may never get implemented at this point, at least not in this version of the physics system. I never actually got to use this in any game prototypes, but this project has given me insight into how physics systems are built.
+This system is missing the ability to work with certain things in a nice way, such as elevators, slopes, etc. However, these may never get implemented at this point, at least not in this version of the physics system. I never actually got to use this in any games (though an early, 2D version was used in a VR game), but this project has given me insight into how physics systems are built.
 
 I want to investigate Unity's ECS system. I may rebuild this system there, depending on how things turn out.
 
